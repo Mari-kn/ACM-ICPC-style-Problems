@@ -1,13 +1,169 @@
 # ACM Competitive Programming Solutions (Python)
 
-A comprehensive collection of **55+ classic algorithm problems** solved in Python, organized by topic. Each solution follows ACM contest format with stdin/stdout I/O, multiple approaches, complexity analysis, and edge case handling.
+A comprehensive collection of **69 classic algorithm problems** solved in Python, organized by topic. Each solution follows ACM contest format with stdin/stdout I/O, multiple approaches, complexity analysis, and edge case handling.
+
+---
+
+## Beginner's Guide: Learn Python Through This Repo
+
+If you're new to Python and want to learn programming through problem-solving, this repo is a structured way to do it. Below is a **5-phase learning plan** that takes you from zero to competitive programming level, using the problems in this repo.
+
+### Prerequisites
+
+- Install Python 3 on your machine
+- Know how to run a `.py` file from the terminal: `python3 filename.py`
+- A text editor (VS Code recommended)
+
+### Phase 1: Python Basics (Week 1-2)
+
+Start here. These problems use basic Python: variables, loops, conditionals, and simple math.
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | FizzBuzz | `arrays/fizzbuzz.py` | `if/elif/else`, `for` loop, `print()`, modulo `%` |
+| 2 | Factorial | `arrays/factorial.py` | Loops vs recursion, function definitions |
+| 3 | Fibonacci | `arrays/fibonacci.py` | Recursion, memoization, building sequences |
+| 4 | Palindrome Number | `arrays/palindrome_number.py` | While loops, integer operations |
+| 5 | Reverse Integer | `arrays/reverse_integer.py` | Digit manipulation, overflow awareness |
+| 6 | GCD & LCM | `math/gcd_lcm.py` | Euclidean algorithm, `while` loops |
+
+**Tips for Phase 1:**
+- Read each file top to bottom. Every file starts with a problem description.
+- Type the code yourself instead of copy-pasting. This builds muscle memory.
+- Try solving the problem on your own before reading the solution.
+- Run the code with the example inputs and verify the output.
+
+### Phase 2: Data Structures Fundamentals (Week 3-4)
+
+Learn Python's built-in data structures: lists, dictionaries, sets, and stacks.
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | Two Sum | `arrays/two_sum.py` | Dictionaries (hash maps), `enumerate()` |
+| 2 | Valid Anagram | `strings/valid_anagram.py` | Frequency counting, string iteration |
+| 3 | Find All Pairs | `arrays/find_all_pairs.py` | Sets, complement searching |
+| 4 | Remove Duplicates | `arrays/remove_duplicates.py` | Two-pointer technique, in-place modification |
+| 5 | Move Zeroes | `arrays/move_zeroes.py` | Array partitioning, swapping |
+| 6 | Valid Parentheses | `arrays/valid_parentheses.py` | Stacks (using lists), matching patterns |
+| 7 | String Compression | `strings/string_compression.py` | String building, run-length encoding |
+| 8 | Min Stack | `stacks_queues/min_stack.py` | Stack design, tracking auxiliary state |
+| 9 | Queue Using Stacks | `stacks_queues/queue_using_stacks.py` | Queue vs stack behavior, amortized analysis |
+
+**Tips for Phase 2:**
+- Focus on understanding *when* to use which data structure.
+- Dictionary = fast lookups by key. Set = fast membership checks. List = ordered sequence.
+- Draw out what happens at each step on paper.
+
+### Phase 3: Core Algorithms (Week 5-7)
+
+Now tackle sorting, searching, and fundamental algorithmic techniques.
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | Binary Search | `sorting_searching/binary_search.py` | Divide and conquer, `while` with bounds |
+| 2 | Merge Sort | `sorting_searching/merge_sort.py` | Recursion, divide and conquer, stable sorting |
+| 3 | Quick Sort | `sorting_searching/quick_sort.py` | Partitioning, pivot selection |
+| 4 | Maximum Subarray | `arrays/maximum_subarray.py` | Kadane's algorithm, dynamic thinking |
+| 5 | Container With Most Water | `arrays/container_with_most_water.py` | Two-pointer greedy strategy |
+| 6 | Three Sum / Four Sum | `arrays/three_sum_four_sum.py` | Sorting + two pointers, deduplication |
+| 7 | Longest Substring No Repeat | `strings/longest_substring_no_repeat.py` | Sliding window technique |
+| 8 | Kth Largest Element | `sorting_searching/kth_largest.py` | Quickselect, heaps (`heapq`) |
+| 9 | Sieve of Primes | `math/sieve_primes.py` | Sieve of Eratosthenes, prime number theory |
+| 10 | Evaluate RPN | `stacks_queues/evaluate_rpn.py` | Stack-based expression evaluation |
+
+**Tips for Phase 3:**
+- Learn to analyze time complexity. Each file includes Big-O analysis — study it.
+- Understand *why* an approach is O(n) vs O(n^2). This is the core skill of competitive programming.
+- Try the brute force approach first, then read the optimized solution.
+
+### Phase 4: Intermediate Techniques (Week 8-11)
+
+Graphs, trees, dynamic programming, and backtracking. This is where problem-solving gets serious.
+
+**Graphs & Trees — start here:**
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | DFS | `graphs/dfs.py` | Depth-first traversal, recursion on graphs |
+| 2 | BFS | `graphs/bfs.py` | Breadth-first traversal, shortest path (unweighted) |
+| 3 | Binary Tree Traversals | `trees/binary_tree_traversals.py` | Inorder, preorder, postorder, level-order |
+| 4 | Connected Components | `graphs/connected_components.py` | Graph structure, Union-Find basics |
+| 5 | Detect Cycle | `graphs/detect_cycle.py` | Graph coloring, cycle detection |
+| 6 | Topological Sort | `graphs/topological_sort.py` | DAGs, dependency ordering |
+| 7 | Dijkstra | `graphs/dijkstra.py` | Priority queues, shortest path (weighted) |
+| 8 | LCA | `trees/lowest_common_ancestor.py` | Tree queries, binary lifting |
+
+**Dynamic Programming — then move here:**
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | Climbing Stairs | `dp/climbing_stairs.py` | DP basics, overlapping subproblems |
+| 2 | Coin Change | `dp/coin_change.py` | Classic DP, multiple problem variants |
+| 3 | LIS | `dp/lis.py` | 1D DP + binary search optimization |
+| 4 | LCS | `dp/lcs.py` | 2D DP table, reconstruction |
+| 5 | 0/1 Knapsack | `dp/knapsack_01.py` | Subset selection, space optimization |
+| 6 | Edit Distance | `dp/edit_distance.py` | String DP, operation tracking |
+
+**Backtracking:**
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | Generate Subsets | `backtracking/generate_subsets.py` | Recursion trees, bitmask enumeration |
+| 2 | Generate Permutations | `backtracking/generate_permutations.py` | Swap-based backtracking |
+| 3 | N-Queens | `backtracking/n_queens.py` | Constraint satisfaction |
+| 4 | Combination Sum | `backtracking/combination_sum.py` | Pruning, candidate reuse |
+
+**Tips for Phase 4:**
+- Draw the graphs and trees on paper. Trace through DFS/BFS by hand.
+- For DP: always define what `dp[i]` represents before coding. Write the recurrence relation first.
+- Backtracking = "try everything, undo if it doesn't work." Visualize the recursion tree.
+
+### Phase 5: Advanced Topics (Week 12+)
+
+Once you're comfortable with Phase 4, tackle these for contest-level preparation.
+
+| # | Problem | File | What You'll Learn |
+|---|---------|------|-------------------|
+| 1 | Trapping Rain Water | `arrays/trapping_rain_water.py` | Advanced two-pointer |
+| 2 | Sliding Window Maximum | `stacks_queues/sliding_window_maximum.py` | Monotonic deque |
+| 3 | Largest Rectangle in Histogram | `stacks_queues/largest_rectangle_histogram.py` | Monotonic stack |
+| 4 | KMP Pattern Matching | `strings/kmp_pattern_matching.py` | Prefix function, string algorithms |
+| 5 | Matrix Chain Multiplication | `dp/matrix_chain_multiplication.py` | Interval DP |
+| 6 | Bellman-Ford | `graphs/bellman_ford.py` | Negative weights, cycle detection |
+| 7 | Floyd-Warshall | `graphs/floyd_warshall.py` | All-pairs shortest path |
+| 8 | Segment Tree | `advanced_ds/segment_tree.py` | Range queries, lazy propagation |
+| 9 | Fenwick Tree | `advanced_ds/fenwick_tree.py` | Binary indexed tree, prefix sums |
+| 10 | Union-Find | `advanced_ds/union_find.py` | Disjoint set union, path compression |
+| 11 | MST | `advanced_ds/minimum_spanning_tree.py` | Kruskal's and Prim's algorithms |
+| 12 | Max Flow | `advanced_ds/max_flow.py` | Network flow, Edmonds-Karp, Dinic's |
+| 13 | Greedy Problems | `greedy/*.py` | Activity selection, Huffman coding, gas station |
+| 14 | Modular Arithmetic | `math/modular_arithmetic.py` | Mod inverse, CRT, nCr under mod |
+| 15 | Fast Exponentiation | `math/fast_exponentiation.py` | Binary exponentiation, matrix power |
+| 16 | Sudoku Solver | `backtracking/sudoku_solver.py` | Heavy constraint propagation |
+
+**Tips for Phase 5:**
+- These problems appear in ICPC regionals and Codeforces Div 1-2.
+- Focus on understanding the data structure before the problem. Read segment tree theory before solving segment tree problems.
+- Practice on online judges: [Codeforces](https://codeforces.com), [LeetCode](https://leetcode.com), [AtCoder](https://atcoder.jp).
+
+### How to Study Each Problem
+
+For every problem file in this repo, follow this process:
+
+1. **Read the problem description** at the top of the file
+2. **Try to solve it yourself** for 20-30 minutes
+3. **If stuck**, read only the approach/comments, then try again
+4. **Read the full solution** and compare with yours
+5. **Study the complexity analysis** — understand why it's O(n), O(n log n), etc.
+6. **Run it** with the example inputs: `echo "input" | python3 path/to/file.py`
+7. **Modify the code** — change something, break it, fix it. This builds understanding.
 
 ---
 
 ## Repository Structure
 
 ```
-acm-python-solutions/
+ACM/
 │
 ├── arrays/                         # Arrays & Two Pointers
 │   ├── two_sum.py                  # Hash map — O(n)
