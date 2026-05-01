@@ -1,6 +1,28 @@
-# ACM Competitive Programming Solutions (Python)
+# ACM Competitive Programming Solutions in Python
+
+A beginner-friendly roadmap to learn data structures, algorithms, and competitive programming through 69 classic ACM/ICPC-style problems.
 
 A comprehensive collection of **69 classic algorithm problems** solved in Python, organized by topic. Each solution follows ACM contest format with stdin/stdout I/O, multiple approaches, complexity analysis, and edge case handling.
+
+---
+
+## Who Is This For?
+
+- Python beginners who want to learn through problem solving
+- Students preparing for ICPC, university exams, or coding interviews
+- Developers practicing data structures and algorithms
+- Anyone who wants ACM-style stdin/stdout Python solutions
+
+---
+
+## Start Here
+
+If you are new, follow the 5-phase learning plan below.
+If you already know Python, jump directly to:
+- Arrays
+- Graphs
+- Dynamic Programming
+- Advanced Data Structures
 
 ---
 
